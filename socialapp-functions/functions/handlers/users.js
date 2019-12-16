@@ -90,8 +90,7 @@ exports.login = (req, res) => {
     })
     .catch(err => {
       console.error(err);
-      // auth/wrong-password
-      // auth/user-not-found
+
       return res
         .status(403)
         .json({ general: "Wrong credentials, please try again" });
